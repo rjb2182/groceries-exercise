@@ -29,6 +29,7 @@ products = [
 
 print(products)
 
+
 # pprint(products)
 
 # TODO: write some Python code here to produce the desired output
