@@ -45,6 +45,8 @@ print("--------------")
 #"aisle": "cookies cakes", 
 #"price": 3.50}
 
+# the following challenge I tried on my own, without the screencast
+# I had some help from https://stackoverflow.com/questions/17370984/appending-an-id-to-a-list-if-not-already-present/17371105
 
 for item in sorted_products:
     price_usd = "{0:.2f}".format(item["price"])
@@ -69,8 +71,14 @@ sort_dept = sorted(departments)
 
 
 
+    
+
+
+
 for i in sort_dept:
     print (" + " + i)
+
+
 
 
 
