@@ -64,8 +64,16 @@ print("--------------")
 print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
 print("--------------")
 
-for i in departments:
+
+sort_dept = sorted(departments)
+
+
+
+for i in sort_dept:
     print (" + " + i)
+
+
+
 
 
 
