@@ -26,8 +26,11 @@ products = [
 ]    
     # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-
+# with help from https://www.youtube.com/watch?v=Noy20XaMqho&feature=youtu.be
 #print(products)
+# TODO: write some Python code here to produce the desired output:
+
+
 def sort_by_name(p):
     return p["name"]
 sorted_products = sorted(products, key=sort_by_name)
@@ -71,12 +74,24 @@ sort_dept = sorted(departments)
 
 
 
+for d in sort_dept:
+   matching_products = [p for p in products if p["department"] == d]
+   matching_products_count = len(matching_products)
+   if matching_products_count > 1:
+       label = "products"
+   else:
+       label = "product"
+   print(" +++ " + d.title() + " (" + str(matching_products_count) + " " + label + ")")
+
+# I couldn't figure this out on my own so I reverted back to the screencast https://www.youtube.com/watch?v=Noy20XaMqho&feature=youtu.be
+
+
     
 
 
 
-for i in sort_dept:
-    print (" + " + i)
+#for i in sort_dept:
+#    print (" + " + i)
 
 
 
@@ -124,4 +139,4 @@ for i in sort_dept:
 
 # pprint(products)
 
-# TODO: write some Python code here to produce the desired output
+
