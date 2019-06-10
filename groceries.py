@@ -51,6 +51,26 @@ for item in sorted_products:
     print(" + " + item["name"],"($" + str(price_usd) + ")")
 
 
+departments = []
+for i in products:
+    if i['department'] not in departments:
+        departments.append(i["department"])
+
+
+
+department_count = len(departments)
+
+print("--------------")
+print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
+print("--------------")
+
+for i in departments:
+    print (" + " + i)
+
+
+
+
+
 
 
 
