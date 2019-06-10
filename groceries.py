@@ -27,7 +27,10 @@ products = [
     # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
 
-print(products)
+#print(products)
+def sort_by_name(p):
+    return p["name"]
+sorted_products = sorted(products, key=sort_by_name)
 
 products_count = len(products)
 
@@ -43,10 +46,12 @@ print("--------------")
 #"price": 3.50}
 
 
-for item in products:
+for item in sorted_products:
     price_usd = "{0:.2f}".format(item["price"])
     print(" + " + item["name"],"($" + str(price_usd) + ")")
-    
+
+
+
 
 
 
