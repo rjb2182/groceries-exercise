@@ -39,7 +39,8 @@ products_count = len(products)
 
 
 print("--------------")
-print("THERE ARE " + str(products_count) + " PRODUCTS:")
+#print("THERE ARE " + str(products_count) + " PRODUCTS:") #string concatenation
+print(f"THERE ARE {products_count} PRODUCTS:") #string interpolation (f is for format)
 print("--------------")
 
 #{"id":1, 
